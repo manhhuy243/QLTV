@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF84C9D0-7558-4AB7-8538-CB7761C0F1FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DocGia.cs" />
+    <Compile Include="frmDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocGia.Designer.cs">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHeThongcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeThongcs.Designer.cs">
+      <DependentUpon>frmHeThongcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSach.Designer.cs">
+      <DependentUpon>frmQLSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLThe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLThe.Designer.cs">
+      <DependentUpon>frmQLThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTacGia.Designer.cs">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThecs.Designer.cs">
+      <DependentUpon>frmThecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiem.Designer.cs">
+      <DependentUpon>frmTimKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuatDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatDG.Designer.cs">
+      <DependentUpon>frmXuatDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuatDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatDS.Designer.cs">
+      <DependentUpon>frmXuatDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuatMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatMuon.Designer.cs">
+      <DependentUpon>frmXuatMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuatSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatSach.Designer.cs">
+      <DependentUpon>frmXuatSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LienHe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LienHe.Designer.cs">
+      <DependentUpon>LienHe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaXuatBancs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLThe.cs" />
+    <Compile Include="Sach.cs" />
+    <Compile Include="TacGia.cs" />
+    <Compile Include="The.cs" />
+    <Compile Include="TheLoai.cs" />
+    <Compile Include="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDocGia.resx">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHeThongcs.resx">
+      <DependentUpon>frmHeThongcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLSach.resx">
+      <DependentUpon>frmQLSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLThe.resx">
+      <DependentUpon>frmQLThe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTacGia.resx">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThecs.resx">
+      <DependentUpon>frmThecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiem.resx">
+      <DependentUpon>frmTimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatDG.resx">
+      <DependentUpon>frmXuatDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatDS.resx">
+      <DependentUpon>frmXuatDS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatMuon.resx">
+      <DependentUpon>frmXuatMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatSach.resx">
+      <DependentUpon>frmXuatSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LienHe.resx">
+      <DependentUpon>LienHe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportDG.rdlc" />
+    <EmbeddedResource Include="ReportMuon.rdlc" />
+    <EmbeddedResource Include="ReportSach.rdlc" />
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Image\Thumbs.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\1294996458_old-edit-find.ico" />
+    <Content Include="Image\1295014174_old-edit-find.png" />
+    <Content Include="Image\DiaChi.GIF" />
+    <Content Include="Image\DocGia.PNG" />
+    <Content Include="Image\Icon.ICO" />
+    <Content Include="Image\IconDocGia.ico" />
+    <Content Include="Image\IconSach.ico" />
+    <Content Include="Image\IconTacgia.ico" />
+    <Content Include="Image\Login.ico" />
+    <Content Include="Image\phone.PNG" />
+    <Content Include="Image\QuanLyThe.ico" />
+    <Content Include="Image\TacGia.bmp" />
+    <Content Include="Image\TheCard.bmp" />
+    <Content Include="Image\TheDoiMuontra.ico" />
+    <Content Include="Image\TheoDoi.JPG" />
+    <Content Include="Image\ThongKe.PNG" />
+    <Content Include="Image\tieude1.jpg" />
+    <Content Include="Image\TimKiem.bmp" />
+    <Content Include="Image\TroGiup.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
